@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Repositorio Davila</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container-grid">
+
+   
+    <div class="box 1">
+      <h3>Selecciona un Lenguaje</h3>
+      <select id="language-select">
+        <option value="">-- Select --</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="Ruby">Ruby</option>
+        <option value="Go">Go</option>
+        <option value="C++">C++</option>
+        <option value="PHP">PHP</option>
+        <option value="TypeScript">TypeScript</option>
+      </select>
+      <p id="please-select-msg" class="please-msg">Please select a lenguaje</p>
+</div>
+
+    
+    <div class="box 2">
+      <h3>Lenguaje Seleccionado</h3>
+      <p id="selected-language">Ninguno</p>
+      <div id="loading-box" class="loading-box" style="display: none;">Loading please wait...</div>
+    </div>
+
+   
+    <div class="box 3">
+      <h3>Simulación de Error</h3>
+      <p id="error-language"></p>
+      <p id="error-message" class="error"></p>
+      <div id="retry-static" class="retry-box">Click to retry</div>
+    </div>
+
+    
+    <div class="box" id="cuadro">
+  <h3>Repositorio Aleatorio</h3>
+  <div id="selected-language-bar"></div>
+  <div id="repo-container"></div>
+  </div>
+  
+  <div id="refresh-container">
+  <button id="refresh-btn"> Refresh</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
